@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-5">
+    <mat-tab-group>
+      <mat-tab label="Lista przepisów">
+        <app-recipe-list></app-recipe-list>
+      </mat-tab>
+      <mat-tab label="Dopasuj przepis">
+        <app-recipe-matching-list></app-recipe-matching-list>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div class="col-md-7">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCookbook.Server", "SmartCookbook.Server\SmartCookbook.Server.csproj", "{3AC08C5F-49EB-4CFE-B947-04F885ECC803}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "smartcookbook.client", "smartcookbook.client\smartcookbook.client.esproj", "{DA0D39F7-1CCB-4B51-81A7-8988E28CE78C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC08C5F-49EB-4CFE-B947-04F885ECC803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC08C5F-49EB-4CFE-B947-04F885ECC803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC08C5F-49EB-4CFE-B947-04F885ECC803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC08C5F-49EB-4CFE-B947-04F885ECC803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA0D39F7-1CCB-4B51-81A7-8988E28CE78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA0D39F7-1CCB-4B51-81A7-8988E28CE78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA0D39F7-1CCB-4B51-81A7-8988E28CE78C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DA0D39F7-1CCB-4B51-81A7-8988E28CE78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA0D39F7-1CCB-4B51-81A7-8988E28CE78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA0D39F7-1CCB-4B51-81A7-8988E28CE78C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2C88B4B-3796-4E6B-8A2C-776561F892C8}
+	EndGlobalSection
+EndGlobal

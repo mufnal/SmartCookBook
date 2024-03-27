@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ recipe.name }} <button type="button" class="btn float-right" (click)="onCloseRecipe()">X</button> </h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <img [src]="recipe.imagePath"
+         alt="{{ recipe.name }}"
+         class="img-fluid"
+         style="max-height: 500px" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-4 ">
+    <h2>Trudność: {{ recipe.difficulty }}</h2>
+  </div>
+  <div class="col-xs-4">
+    <h2>{{ recipe.timeInMinutes }} minut</h2>
+  </div>
+  <div class="col-xs-4">
+    <h2>Ilość porcji: {{ recipe.numberOfServings }}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group" appDropdown>
+      <button type="button" class="btn btn-primary dropdown-toggle">Zarządzaj Przepisem <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a style="cursor: pointer;" (click)="onEditRecipe()">Edytuj Przepis</a></li>
+        <li><a style="cursor: pointer;" (click)="onDeleteRecipe()">Usuń Przepis</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-xs-6">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+        {{ ingredient.name }} - {{ ingredient.amountOf }} {{unitValue[ingredient.unit]}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-xs-6">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let step of recipe.steps">
+        {{ step.description }}
+      </li>
+    </ul>
+  </div>
+</div>
